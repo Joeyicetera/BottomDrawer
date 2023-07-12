@@ -1,0 +1,11 @@
+﻿@model List<ProjectModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    @foreach (ProjectModel project in Model)
+    {
+     <h1>@project.ShortDesc</h1>       
+    }
+</div>
