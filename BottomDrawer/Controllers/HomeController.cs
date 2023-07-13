@@ -15,10 +15,6 @@ namespace BottomDrawer.Controllers
 
         public IActionResult Index()
         {
-            ProjectModel project = new ProjectModel("test", "test", "test");
-            project.Save();
-
-
             List<ProjectModel> projects = ProjectModel.GetAll();
 
             return View(projects);
